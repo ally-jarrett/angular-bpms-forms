@@ -1,0 +1,3 @@
+[submodule "angular-repos"]
+	path = angular-repos
+	url = ssh://bpmsAdmin@localhost:8001/angular-repos
