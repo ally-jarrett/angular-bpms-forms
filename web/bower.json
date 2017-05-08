@@ -1,0 +1,27 @@
+{
+  "name": "jbpm-web",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "angular-patternfly": "^3.5.1",
+    "angular-route": "^1.5.7",
+    "angular": "^1.5.7",
+    "keycloak": "^2.0.0",
+    "patternfly": "^3.5.1",
+    "angular-translate": "^2.15.1"
+  }
+}

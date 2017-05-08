@@ -1,0 +1,116 @@
+{"form": {
+   "dataHolder":    [
+            {
+         "id": "comments",
+         "inputId": "",
+         "name": "#B29FE4",
+         "outId": "comments",
+         "type": "basicType",
+         "value": "java.lang.String"
+      },
+            {
+         "id": "description",
+         "inputId": "desc",
+         "name": "#FF54A7",
+         "outId": "",
+         "type": "basicType",
+         "value": "java.lang.String"
+      },
+            {
+         "id": "project",
+         "inputId": "project",
+         "name": "#E9E371",
+         "outId": "",
+         "type": "basicType",
+         "value": "java.lang.String"
+      },
+            {
+         "id": "subject",
+         "inputId": "subject",
+         "name": "#E9E371",
+         "outId": "",
+         "type": "basicType",
+         "value": "java.lang.String"
+      }
+   ],
+   "displayMode": "default",
+   "field":    [
+            {
+         "errorMessage": "",
+         "fieldClass": "java.lang.String",
+         "fieldRequired": false,
+         "groupWithPrevious": false,
+         "hideContent": false,
+         "id": 734456628,
+         "inputBinding": "New Project",
+         "isHTML": false,
+         "label": "Project",
+         "name": "project",
+         "position": 0,
+         "readonly": true,
+         "title": "",
+         "type": "InputText"
+      },
+            {
+         "errorMessage": "",
+         "fieldClass": "java.lang.String",
+         "fieldRequired": false,
+         "groupWithPrevious": false,
+         "hideContent": false,
+         "id": 13473131,
+         "inputBinding": "New Desc",
+         "isHTML": false,
+         "label": "Description",
+         "name": "description",
+         "position": 2,
+         "readonly": true,
+         "title": "",
+         "type": "InputText"
+      },
+            {
+         "fieldClass": "Separator",
+         "fieldRequired": false,
+         "groupWithPrevious": false,
+         "id": 255316611,
+         "name": ":decorator_0",
+         "position": 3,
+         "readonly": false,
+         "type": "Separator"
+      },
+            {
+         "errorMessage": "",
+         "fieldClass": "java.lang.String",
+         "fieldRequired": false,
+         "groupWithPrevious": false,
+         "hideContent": false,
+         "id": 2029542310,
+         "isHTML": false,
+         "label": "Comments",
+         "name": "comments",
+         "outputBinding": "comments",
+         "position": 4,
+         "readonly": false,
+         "title": "",
+         "type": "InputText"
+      },
+            {
+         "errorMessage": "",
+         "fieldClass": "java.lang.String",
+         "fieldRequired": false,
+         "groupWithPrevious": false,
+         "hideContent": false,
+         "id": 547635705,
+         "inputBinding": "New Subject",
+         "isHTML": false,
+         "label": "Subject",
+         "name": "subject",
+         "position": 1,
+         "readonly": true,
+         "title": "",
+         "type": "InputText"
+      }
+   ],
+   "id": 684162958,
+   "name": "TicketTask-taskform.form",
+   "status": 0
+}}

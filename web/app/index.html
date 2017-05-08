@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>patternfly-angular web app</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+      
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <link rel="stylesheet" href="/bower_components/patternfly/dist/css/patternfly.min.css" />
+	<link rel="stylesheet" href="/bower_components/patternfly/dist/css/patternfly-additions.min.css" />
+    <link rel="stylesheet" href="/bower_components/angular-growl-v2/build/angular-growl.min.css" media="screen"/> 
+    <link rel="stylesheet" type="text/css" href="/bower_components/fullpage.js/jquery.fullPage.css" />
+
+    <script src="js/utils/env.js"></script>
+      
+    <!-- jQuery -->
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+	<!-- Datatables, jQuery Grid Component -->
+	<!-- Note: jquery.dataTables.js must occur in the html source before patternfly*.js.-->
+	<script src="/bower_components/datatables/media/js/jquery.dataTables.js"></script>
+	<script src="/bower_components/datatables-colvis/js/dataTables.colVis.js"></script>
+	<script src="/bower_components/datatables-colreorder/js/dataTables.colReorder.js"></script>
+
+	<!-- PatternFly Custom Components -  Sidebar, Popovers and Datatables Customizations -->
+	<!-- Note: jquery.dataTables.js must occur in the html source before patternfly*.js.-->
+	<script src="/bower_components/patternfly/dist/js/patternfly.js"></script>
+
+	<!-- Bootstrap Combobox -->
+	<script src="/bower_components/bootstrap-combobox/js/bootstrap-combobox.js"></script>
+
+	<!-- Bootstrap Date Picker -->
+	<script src="/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+
+	<!-- Bootstrap Select -->
+	<script src="/bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+	<!-- Bootstrap Switch -->
+	<script src="/bower_components/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
+
+	<!-- Bootstrap Touchspin -->
+	<script src="/bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+      
+	<!-- Google Code Prettify - Syntax highlighting of code snippets -->
+	<script src="/bower_components/google-code-prettify/bin/prettify.min.js"></script>
+
+	<!-- MatchHeight - Used to make sure dashboard cards are the same height -->
+	<script src="/bower_components/matchHeight/jquery.matchHeight.js"></script>
+    
+    <!-- MatchHeight - Used to make sure dashboard cards are the same height 
+	<script src="bower_components/keycloak/dist/keycloak.js"></script> -->
+      
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+      
+    <!-- endbuild -->
+  </head>
+  <body ng-app="angularWebApp"> 
+
+    <div ng-include='"html/templates/header.html"'></div>
+    <div id="content" class="container">
+        <div growl></div> <!-- adding the growl directive to html -->
+        <div ng-view></div>
+    </div>
+    <div class="push"></div>
+    <div ng-include='"html/templates/footer.html"'></div>
+    
+    <!-- Lodash JS -->
+	<script src="/bower_components/lodash/lodash.min.js"></script>
+      
+    <!-- Vendor: Angular, Routing & Bootstrap JS Libs -->
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-route/angular-route.min.js"></script>
+    <script src="/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="/bower_components/angular-growl-v2/build/angular-growl.min.js"></script>
+      
+    <!-- Angular Formly - Generate Forms from JSON -->
+    <script src="/bower_components/api-check/dist/api-check.js"></script>
+    <script src="/bower_components/angular-formly/dist/formly.min.js"></script>
+    <script src="/bower_components/angular-formly-templates-bootstrap/dist/angular-formly-templates-bootstrap.min.js"></script>
+    
+    <!-- build:js scripts/main.js -->
+    <script src="js/app.js"></script>
+    <script src="js/utils/formly-config.js"></script>
+      
+    <!-- angularWebApp Controllers -->
+    <script src="js/controllers/homecontroller.js"></script>
+    <script src="js/controllers/templates/headerController.js"></script>
+    <script src="js/services/forms/taskFormGenerator.js"></script>
+    <script src="js/controllers/modals/modalTaskView.js"></script>
+    <script src="js/controllers/modals/taskModal.js"></script>
+      
+    <!-- angularWebApp Factories & Services -->
+    <script src="js/services/kie/kieServerService.js"></script>
+    <script src="js/services/kie/KieProcessInstanceService.js"></script>
+    <script src="js/services/kie/KieTaskManagementService.js"></script>
+    <script src="js/services/kie/kieContainerManagementService.js"></script>
+    <script src="js/services/interceptors/kieInterceptor.js"></script>
+      
+    <!-- angularWebApp Utils-->
+    <script src="js/utils/stateStore.js"></script>
+    <script src="js/utils/constants.js"></script>
+    <script src="js/utils/utilityFunctions.js"></script>
+      
+  </body>
+</html>

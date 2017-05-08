@@ -1,0 +1,17 @@
+<div class="modal-header" id="task-view-modal">
+    <button type="button" class="close" ng-click="modalCancel()" aria-hidden="true"> <span class="pficon pficon-close"></span> </button>
+    <h1 class="modal-title" id="myModalLabel1" ng-show="currentTask">jBPM Task Viewer</h1>
+    <h1 class="modal-title" id="myModalLabel2" ng-show="currentTask">Task Name: {{vm.title}}</h1> 
+     <h1 class="modal-title" id="myModalLabel3" ng-hide="currentTask">{{vm.title}}</h1> 
+</div>
+
+<div class="modal-body">
+    <div >
+        <form ng-submit="submitForm()" name="vm.form" novalidate>
+            <formly-form model="vm.model" fields="vm.fields" options="vm.options" form="vm.form">
+                <button type="submit" id="task-form-save" class="btn btn-primary submit-button" ng-disabled="vm.form.$invalid">Save</button>
+                <button type="button" id="task-form-cancel" ng-click="modalCancel()" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </formly-form>
+        </form>
+    </div>
+</div>

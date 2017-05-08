@@ -1,0 +1,23 @@
+<div class="panel panel-default" ng-hide="data.error.code">
+    <div class="panel-heading">
+        <h3>Ticket</h3> </div>
+    <form name="viewTicketForm" novalidate>
+        <div class="panel-body">
+            <div class="form-group">
+                <label>Project</label>
+                <input class="form-control" ng-model="data.task['task-input-data']['project']"/> </div>
+            <div class="form-group">
+                <label>Subject</label>
+                <input class="form-control" ng-model="data.task['task-input-data']['subject']"/> </div>
+            <div class="form-group">
+                <label>Description</label>
+                <textarea class="form-control" ng-model="data.task['task-input-data']['desc']"/> </div>
+            <div class="form-group">
+                <label>Comment</label>
+                <textarea class="form-control" ng-model="data.task['task-output-data']['comments']" /> </div>
+            <button type="submit" class="btn btn-default" ng-click="saveTask(data.task)">Save</button>
+            <button type="submit" class="btn btn-primary" ng-click="completeTask(data.task)">Complete</button>
+            <button type="submit" class="btn btn-danger" ng-click="close()">Cancel</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,45 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+}
+
+.push {
+    height: 8em;
+}
+
+.form-compact {
+  font-size: 0.8em;
+}
+
+.form-control-static.test{
+    min-height:0px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.colour {
+    border: 2px solid #39a5dc !important;
+}
+
+.remove-row-pad {
+    margin-top:-20px !important;
+}
+
+#my-row {
+    display: table;
+}
+
+#my-row .panel {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
